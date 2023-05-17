@@ -333,10 +333,14 @@ p {
   padding: 0;
   margin: 100px 0 0;
   /* Add styles */
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
 }
 
 .step {
   /* Add styles */
+  width: 220px;
 }
 
 .step__title {
