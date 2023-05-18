@@ -367,6 +367,8 @@ p {
   overflow: hidden;
   position: relative;
   box-sizing: border-box;
+  /* my styles*/
+  display: flex;
 }
 
 .about__title {
@@ -375,6 +377,8 @@ p {
   line-height: 30px;
   font-weight: 500;
   z-index: 1;
+  /* my styles*/
+  max-width: 154px;
 }
 
 .about__content {
@@ -382,6 +386,19 @@ p {
   line-height: 30px;
   font-weight: 400;
   max-width: 660px;
+  /* added styles*/
+  position: relative;
+  left: 120px;
+  z-index: 1;
+}
+
+/* added this */
+.about__paragraph {
+  margin-bottom: 32px;
+}
+/* added this */
+.about__paragraph:last-of-type {
+  margin-bottom: 0px;
 }
 
 .about__circle {
@@ -389,6 +406,10 @@ p {
   width: 495px;
   height: 495px;
   border-radius: 50%;
+  /* added styles*/
+  position: absolute;
+  top: -150px;
+  left: -100px;
 }
 
 .footer {
