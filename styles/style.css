@@ -21,7 +21,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .logo {
@@ -55,6 +55,7 @@
   font-weight: 500;
   max-width: 544px;
   margin-top: 150px;
+  margin-bottom: 0;
 }
 
 .header__description {
@@ -62,6 +63,7 @@
   line-height: 30px;
   max-width: 532px;
   margin-top: 32px;
+  margin-bottom: 0;
 }
 
 .header__image {
@@ -93,12 +95,6 @@
 .header__address {
   margin: 0;
   color: #838383;
-}
-
-h1,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .events {
@@ -196,31 +192,26 @@ p {
 }
 
 .person_name_feynman {
-  position: absolute;
   top: -30px;
   left: 319px;
 }
 
 .person_name_burbidge {
-  position: absolute;
   top: 96px;
   right: 125px;
 }
 
 .person_name_cannon {
-  position: absolute;
   bottom: 18px;
   right: 216px;
 }
 
 .person_name_mitchell {
-  position: absolute;
   bottom: 82px;
   left: 142px;
 }
 
 .person_name_tarter {
-  position: absolute;
   top: 79px;
   left: 159px;
 }
@@ -250,6 +241,7 @@ p {
 .staff {
   padding: 100px 0 140px;
   background-image: url("../images/staff_picks_background.jpg");
+  background-size: cover;
 }
 
 .staff__title {
@@ -271,14 +263,12 @@ p {
 
 .staff__cards {
   max-width: 760px;
-  position: relative;
-  top: 68px;
   margin: 0 auto;
+  padding-top: 68px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 40px;
-  row-gap: 40px;
+  gap: 40px;
   list-style-type: none;
   padding-left: 0;
 }
@@ -395,7 +385,9 @@ p {
 
 .about__paragraph {
   margin-bottom: 32px;
+  margin-top: 0;
 }
+
 .about__paragraph:last-of-type {
   margin-bottom: 0px;
 }
@@ -455,6 +447,7 @@ p {
 
 .footer__column-heading {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .footer__column-link {
@@ -463,7 +456,7 @@ p {
   line-height: 20px;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .footer__column-link:hover {
@@ -473,8 +466,10 @@ p {
 .footer__social-icon {
   width: 16px;
   height: 16px;
+  margin-right: 10px;
 }
 
 .footer__copyright {
-  margin-top: 108px;
+  margin: 0;
+  padding-top: 108px;
 }
